@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hiyocord</title>
+    <style>
+        :root {
+            --bg: #0f1220;
+            --bg-soft: #171a2e;
+            --text: #e6e8f2;
+            --text-muted: #a8acc8;
+            --accent: #7aa2ff;
+            --accent-soft: #9db5ff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: linear-gradient(180deg, var(--bg) 0%, #0b0d18 100%);
+            color: var(--text);
+        }
+
+        header {
+            padding: 64px 20px 56px;
+            text-align: center;
+        }
+
+        header img {
+            width: 96px;
+            height: 96px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        header p {
+            max-width: 640px;
+            margin: 16px auto 0;
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        header p strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px 80px;
+        }
+
+        section {
+            margin-top: 72px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: linear-gradient(180deg, var(--bg-soft), #12142a);
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.5);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .card p strong {
+            color: var(--accent-soft);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin-top: 12px;
+            color: var(--accent-soft);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 20px;
+            background: #0b0d18;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://github.com/hiyocord.png" alt="hiyocord icon" aria-hidden="true" />
+        <h1>Hiyocord</h1>
+        <p>
+            <strong>Help your project hatch into something great.</strong><br />
+            An open-source ecosystem for building reliable and developer-friendly Discord integration services.
+        </p>
+    </header>
+
+    <main>
+
+        <section class="cards links">
+            <div class="card">
+                <h3>📘 Documentation</h3>
+                <p>Master hiyocord with our comprehensive guides and API references.</p>
+                <a href="https://docs.hiyocord.org" target="_blank" rel="noopener">
+                    docs.hiyocord.org
+                    <span aria-hidden="true">→</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>🐙 GitHub</h3>
+                <p>Contribute to the core, report issues, or join our community discussions.</p>
+                <a href="https://github.com/hiyocord" target="_blank" rel="noopener">
+                    github.com/hiyocord
+                    <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2025 hiyocord
+    </footer>
+
+</body>
+
+</html>
